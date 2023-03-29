@@ -1,0 +1,81 @@
+1 task
+import itertools 
+letters = ['A','B','C']
+permutations = list(itertools.permutations(letters))
+for perm in permutations:
+    print(''.join(perm))
+    
+2 task
+import itertools 
+lst1 = ['A','B','C']
+lst2 = ['x','y','z']
+result = [(x,y) for x in lst1 for y in lst2]
+print(result)
+
+3 task
+import itertools 
+lst1 = ['A','B']
+lst2 = ['X','Y']
+lst3 = [1,2]
+result = list(itertools.product(lst1,lst2,lst3))
+print(result)
+
+4 task
+import itertools
+lst = ['A','B','C']
+k = 2
+result = list(itertools.product(lst,repeat=k))
+print(result)
+
+5 task
+import itertools 
+set = ["A","B","C"]
+result = []
+for i in range(len(set)+1):
+    result += itertools.combinations(set,i)
+print(result)
+
+6 task
+import itertools
+from itertools import permutations
+string1 = 'abc'
+result = itertools.permutations(string1)
+for permutation in result:
+    print(''.join(permutation))
+
+7 task
+import itertools
+from itertools import permutations
+str1 = "abc"
+result = []
+for i in range(len(str1)+1):
+    result +=
+itertools.combinations(str1,i)
+for combination in result:
+    print(result)
+
+8 task
+import itertools 
+def is_pythagoran_triple(triple):
+    a,b,c = triple
+    return a**2 + b**2 == c**2
+max_value = 10
+triples = itertools.product(range(1,max_value+1),repeat=3)
+pythagoran_triple = filter(is_pythagoran_triple,triples)
+for triple in pythagoran_triple:
+    print(triple)
+
+9 task
+import math
+n = int(input('1 chislo'))
+r = int(input('2 chislo'))
+def permutation(n,r):
+    return math.factorial(n)
+a = math.factorial(n-r)
+def combinations(n,r):
+    return math.factorial(n)
+(math.factorial(r)*math.factorial(n-r))
+def arrangements(n,r):
+    return math.factorial(n)
+math.factorial(n-r)
+print('factorial',a,'combinations',combinations(n,r),'arrangements',arrangements(n,r))
